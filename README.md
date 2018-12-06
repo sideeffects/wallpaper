@@ -1,5 +1,4 @@
-# wallpaper
-A Houdini network pattern generator.
+# Houdini wallpaper pattern generator
 
 This Python script generates patterns (SVG or bitmaps) based on the look of Houdini node networks. The patterns might be useful as desktop wallpaper or wrapping paper for gifts for the Houdini nerd in your life.
 
@@ -39,10 +38,6 @@ If ``outfile`` ends with  ``.png`` or ``.jpg``, the script will try to use Qt's 
 ``xmas.cfg``
 
 ![xmas wallpaper image](examples/xmas.png)
-
-``citrus.cfg``
-
-![citrus wallpaper image](examples/citrus.png)
 
 
 ## Options
