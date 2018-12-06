@@ -40,10 +40,6 @@ If ``outfile`` ends with  ``.png`` or ``.jpg``, the script will try to use Qt's 
 
 ![xmas wallpaper image](examples/xmas.png)
 
-``citrus.cfg``
-
-![citrus wallpaper image](examples/citrus.png)
-
 
 ## Options
 
