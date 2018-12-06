@@ -3,10 +3,6 @@ import argparse
 import colorsys
 import random
 import re
-try:
-    import configparser
-except ImportError:
-    import ConfigParser as configparser
 
 
 shapes = {
