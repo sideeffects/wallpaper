@@ -5,6 +5,7 @@ This Python script generates patterns (SVG or bitmaps) based on the look of Houd
 
 ![Example wallpaper image](examples/default.png)
 
+
 ## Usage
 
     python wallpaper.py [options] outfile
@@ -12,6 +13,37 @@ This Python script generates patterns (SVG or bitmaps) based on the look of Houd
 If ``outfile`` ends with ``.svg``, the script will output an SVG vector image.
 
 If ``outfile`` ends with  ``.png`` or ``.jpg``, the script will try to use Qt's SVG libraries to render the image. If you have Houdini, you can start a Houdini shell and run the script using ``hython`` to ensure Qt is available. Otherwise, you will need to install either PySide2 or PyQt5.
+
+## Examples
+
+``fun.cfg``
+
+![fun wallpaper image](examples/fun.png)
+
+``desert.cfg``
+
+![desert wallpaper image](examples/desert.png)
+
+``lowkey.cfg``
+
+![lowkey wallpaper image](examples/lowkey.png)
+
+``wonder.cfg``
+
+![wonder wallpaper image](examples/wonder.png)
+
+``party.cfg``
+
+![party wallpaper image](examples/party.png)
+
+``xmas.cfg``
+
+![xmas wallpaper image](examples/xmas.png)
+
+``citrus.cfg``
+
+![citrus wallpaper image](examples/citrus.png)
+
 
 ## Options
 
@@ -95,6 +127,7 @@ The width (in pixels) to draw "wires". If you don't specify this, the script use
 
 If you use ``--scheme=random``, instead of picking colors from a fixed set of colors, the script generates random hues as needed. These options let you set the saturation and lightness (as in the HSL color model) for the random hues.
 
+
 ### Configuration files
 
 On the command line, when specifying options, you can reference a text file containing options by prefixing the config file path with `@`.
@@ -122,34 +155,4 @@ The option parser as if the options in the file were passed at the point where y
     python wallpaper.py -W800 -H600 @examples/xmas.cfg --shape=burst examples/xmas2.png
 
 __Warning__: this feature comes from the ``argparse`` library and it can be a bit tetchy. For example, do not add more than one blank line at the end of the config file. If the option parser complains about unrecognized options when you use a config file, check for extra whitespace in the file.
-
-## Examples
-
-``fun.cfg``
-
-![fun wallpaper image](examples/fun.png)
-
-``desert.cfg``
-
-![desert wallpaper image](examples/desert.png)
-
-``lowkey.cfg``
-
-![lowkey wallpaper image](examples/lowkey.png)
-
-``wonder.cfg``
-
-![wonder wallpaper image](examples/wonder.png)
-
-``party.cfg``
-
-![party wallpaper image](examples/party.png)
-
-``xmas.cfg``
-
-![xmas wallpaper image](examples/xmas.png)
-
-``citrus.cfg``
-
-![citrus wallpaper image](examples/citrus.png)
 
